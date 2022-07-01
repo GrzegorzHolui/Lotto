@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="gameLotto.NumberGeneratorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-07-01T09:25:47" hostname="LAPTOP-BE974Q6F" time="0.305">
+<testsuite name="gameLotto.NumberGeneratorTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-07-01T11:26:37" hostname="LAPTOP-BE974Q6F" time="0.492">
   <properties/>
-  <testcase name="should return the that User aimed six numbers" classname="gameLotto.NumberGeneratorTest" time="0.3"/>
-  <testcase name="should return the that User aimed five numbers" classname="gameLotto.NumberGeneratorTest" time="0.001"/>
-  <testcase name="should return the that User aimed two numbers" classname="gameLotto.NumberGeneratorTest" time="0.002"/>
-  <system-out><![CDATA[You aimed 6
-You aimed 5
-You aimed 2
-]]></system-out>
+  <testcase name="should return the that User aimed six numbers" classname="gameLotto.NumberGeneratorTest" time="0.492">
+    <failure message="Condition not satisfied:&#10;&#10;lottoResult.getMessage() == &quot;You aimed  + 6&quot;&#10;|           |            |&#10;|           You aimed 6  false&#10;|                        3 differences (78% similarity)&#10;|                        You aimed (---)6&#10;|                        You aimed ( + )6&#10;&lt;gameLotto.LottoResult@2a0c2ed0 message=You aimed 6&gt;&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+lottoResult.getMessage() == &quot;You aimed  + 6&quot;
+|           |            |
+|           You aimed 6  false
+|                        3 differences (78% similarity)
+|                        You aimed (---)6
+|                        You aimed ( + )6
+&lt;gameLotto.LottoResult@2a0c2ed0 message=You aimed 6&gt;
+
+	at gameLotto.NumberGeneratorTest.should return the that User aimed six numbers(NumberGeneratorTest.groovy:15)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
